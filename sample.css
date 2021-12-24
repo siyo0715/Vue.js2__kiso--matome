@@ -1,0 +1,14 @@
+.v-enter-active {
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+}
+
+.v-enter {
+  opacity: 0;
+}
+
+.v-enter-to {
+  opacity: 3;
+  color: green;
+}
+/*# sourceMappingURL=sample.css.map */
