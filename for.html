@@ -15,10 +15,12 @@
     </div>
     <div class="frame__inner">
         <div id="app">
-            <input type="number" v-model="number"> = {{number}}
+            <ul v-for="i of 10" :key="i">
+                <li>{{i}}</li>
+            </ul>
         </div>
     </div>
-    <script src="form.js"></script>
+    <script src="for.js"></script>
 </body>
 
 </html>
