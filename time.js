@@ -3,7 +3,7 @@ Vue.component('clock', {
         
       return {
           time: '',
-          title:'時計↓'
+        //   title:'時計↓'
       }
     },
     mounted: function () {
@@ -16,7 +16,7 @@ Vue.component('clock', {
           this.time = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
         }
     },
-    template: '<div><h2>{{title}}</h2>{{time}}</div>'
+    template: '<div><h2><slot>時計↓</slot></h2>{{time}}</div>'
 })
 
 let app = new Vue({
